@@ -24,15 +24,15 @@
         }
     ],
     "dependencies": {
-        "node-red": "0.16.2",
+        "node-red": "*",
         "node-red-node-msgpack": "*",
         "node-red-node-base64": "*",
         "node-red-node-suncalc": "*",
         "node-red-node-random": "*",
-        "node-red-contrib-postgres": "*"
+        "node-red-contrib-postgres": "https://github.com/timwaizenegger/node-red-contrib.git#:node-red-contrib-postgres"
 
     },
     "engines": {
-        "node": "5.*.*"
+        "node": "6.*.*"
     }
 }
