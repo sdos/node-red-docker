@@ -1,4 +1,4 @@
-FROM node:6
+FROM node:5
 
 # Home directory for Node-RED application source code.
 RUN mkdir -p /usr/src/node-red
@@ -18,6 +18,8 @@ USER node-red
 # package.json contains Node-RED NPM module and node dependencies
 COPY package.json /usr/src/node-red/
 RUN npm install
+
+COPY files/flows_mcm-bluebox.json /data/flows.json
 
 # User configuration directory volume
 EXPOSE 1880

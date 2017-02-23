@@ -6,7 +6,7 @@
     "license": "Apache 2.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/node-red/node-red-docker.git"
+        "url": "https://github.com/timwaizenegger/node-red-docker.git"
     },
     "main": "node_modules/node-red/red/red.js",
     "scripts": {
@@ -28,9 +28,11 @@
         "node-red-node-msgpack": "*",
         "node-red-node-base64": "*",
         "node-red-node-suncalc": "*",
-        "node-red-node-random": "*"
+        "node-red-node-random": "*",
+        "node-red-contrib-postgres": "*"
+
     },
     "engines": {
-        "node": "4.*.*"
+        "node": "5.*.*"
     }
 }
