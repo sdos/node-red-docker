@@ -20,7 +20,7 @@ COPY package.json /usr/src/node-red/
 RUN npm install
 
 COPY files/flows.json /data/flows.json
-#COPY files/flows_cred.json /data/flows_cred.json
+COPY files/flows_cred.json /data/flows_cred.json
 
 # User configuration directory volume
 EXPOSE 1880
